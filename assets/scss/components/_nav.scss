@@ -1,0 +1,93 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        display: none;
+    }
+    .barras{
+        font-size: $fs-xxl;
+        color: $dark;
+        margin: 1em;
+        @include respond-to($bp-sm){ 
+            display: none;
+        }
+    }
+    @include respond-to($bp-sm){ 
+        display: flex;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                font-family: $secondary-font;
+                font-size: $fs-xl;
+                font-weight: 700;
+                a{
+                    color: $dark;
+                    margin: 0 1em;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+            
+
+    // ul{
+    //     display: flex;
+    //     li{
+    //         list-style: none;
+    //         font-family: $secondary-font;
+    //         font-size: $fs-xxl;
+    //         font-weight: 700;
+    //         a{
+    //             color: $dark;
+    //             margin: 0 1em;
+    //             text-decoration: none;
+    //         }
+    //     }
+    // }
+}
+// nav{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     ul{
+//         display: flex;
+//         li{
+//             list-style: none;
+//             font-family: $secondary-font;
+//             font-size: $fs-xxl;
+//             font-weight: 700;
+//             a{
+//                 color: $dark;
+//                 margin: 0 1em;
+//                 text-decoration: none;
+//             }
+//         }
+//     }  
+// }
+// @include respond-to($bp-sm){  
+//     nav{
+        
+//         ul{
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             li{
+//                 list-style: none;
+//                 font-family: $secondary-font;
+//                 font-size: $fs-xl;
+//                 font-weight: 700;
+//                 a{
+//                     color: $dark;
+//                     margin: 0 1em;
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//     }  
+// }

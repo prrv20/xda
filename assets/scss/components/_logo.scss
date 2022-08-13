@@ -1,0 +1,15 @@
+.logo {
+    background-color: $dark;
+    color: $light;
+    padding: .5em;
+    text-align: center;
+    width: 15%;
+    p{
+        font-family: $principal-font;
+        font-size: $fs-xxl;
+        font-weight: 700;
+    }
+    @include respond-to($bp-md){ 
+        width: 10%;
+    }
+}

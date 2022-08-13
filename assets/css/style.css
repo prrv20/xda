@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: none;
+}
+nav .barras {
+  font-size: 1.875rem;
+  color: #0C0910;
+  margin: 1em;
+}
+@media (min-width: 576px) {
+  nav .barras {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  nav {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul li {
+    list-style: none;
+    font-family: "Raleway";
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  nav ul li a {
+    color: #0C0910;
+    margin: 0 1em;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  background-color: #FFF;
+  border: 1px solid #0C0910;
+  padding: 1em 2em;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+}
+.contenido .articulo {
+  margin: 1em auto;
+  width: 80%;
+}
+.contenido .articulo h1 {
+  font-size: 3.125rem;
+  font-family: "Old Standar TT";
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  .contenido .articulo h1 {
+    font-size: 3.125rem;
+  }
+}
+.contenido .articulo p {
+  font-family: "Raleway";
+  font-size: 1.125rem;
+  line-height: 2em;
+}
+.contenido .image {
+  background-image: url(../img/imagen1.png);
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .contenido {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contenido .articulo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .contenido .image {
+    background-image: url(../img/imagen1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+.news-letter {
+  display: inline-flex;
+  background-color: #0C0910;
+  color: #FFF;
+  height: 12rem;
+  width: 100%;
+}
+.news-letter h3 {
+  font-family: "Old Standar TT";
+  font-size: 1.875rem;
+}
+.news-letter .content {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  width: 70%;
+}
+.news-letter .suscribir {
+  border: none;
+  width: 10%;
+}
+.news-letter .suscribir p {
+  transform: rotate(90deg);
+}
+@media (min-width: 768px) {
+  .news-letter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .news-letter .suscribir {
+    width: 5%;
+  }
+}
+
+.logo {
+  background-color: #0C0910;
+  color: #FFF;
+  padding: 0.5em;
+  text-align: center;
+  width: 15%;
+}
+.logo p {
+  font-family: "Old Standar TT";
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
